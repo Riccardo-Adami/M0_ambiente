@@ -97,3 +97,47 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 ```
 
+
+# Esercizio 7 — File .gitignore e verifica delle regole
+
+## Output dei comandi (`git status` e `git check-ignore`)
+```bash
+@Riccardo-Adami ➜ /workspaces/M0_ambiente (main) $ git status
+git check-ignore -v M0_ambiente/.venv/pyvenv.cfg
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+.gitignore:7:.venv/     M0_ambiente/.venv/pyvenv.cfg
+```
+
+# Es 8
+non abbiamo applicazione ssh installata
+
+
+# Esercizio 9 — Lettura e interpretazione della cronologia
+
+## Output del comando `git log --oneline --graph --decorate`
+```text
+* 4835624 (HEAD -> main, origin/main, origin/HEAD) feat aggiunta gitignore
+* cbcded4 feat esercizio 5, inizializzazione repo privata in locale
+* 3f4bac9 feat, esercizio 4 con configurazione profilo git
+* 00a239a Aggiungi file comandi.md con dettagli sulle versioni della postazione e istruzioni
+*   40ce59a Merge branch 'main' of https://github.com/Riccardo-Adami/M0_ambiente
+|\  
+| * 142aa83 Create t
+* | d10ee12 Aggiorna comandi.md con dettagli sulle verifiche e rimuove output non necessari
+|/  
+* b6d2ece Aggiungi file comandi.md con istruzioni e versioni degli strumenti
+* 5dc2008 Add initial README with project title
+```
+
+## Output del comando `git log -5 --pretty=format:"%h %ad %an %s" --date=short`
+```text
+4835624 2026-09-18 Riccardo Adami feat aggiunta gitignore
+cbcded4 2026-09-18 Riccardo Adami feat esercizio 5, inizializzazione repo privata in locale
+3f4bac9 2026-09-18 Riccardo Adami feat, esercizio 4 con configurazione profilo git
+00a239a 2026-09-18 Riccardo-Adami Aggiungi file comandi.md con dettagli sulle versioni della postazione e istruzioni
+40ce59a 2026-09-18 Riccardo-Adami Merge branch 'main' of https://github.com/Riccardo-Adami/M0_ambiente
+```
+
