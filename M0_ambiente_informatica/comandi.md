@@ -83,3 +83,16 @@ file:/home/codespace/.gitconfig user.name=Riccardo Adami
 file:/home/codespace/.gitconfig user.email=riccardo.adami@marconirovereto.it
 file:/home/codespace/.gitconfig init.defaultbranch=main
 file:/home/codespace/.gitconfig core.editor=code --wait
+```
+
+
+# Esercizio 5 — Creazione del repository personale e primo commit
+
+## Verifica dello stato del repository locale
+```cmd
+PS Z:\lab-info-4bi-adami> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+```
