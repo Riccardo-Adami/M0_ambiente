@@ -141,3 +141,30 @@ cbcded4 2026-09-18 Riccardo Adami feat esercizio 5, inizializzazione repo privat
 40ce59a 2026-09-18 Riccardo-Adami Merge branch 'main' of https://github.com/Riccardo-Adami/M0_ambiente
 ```
 
+
+# Esercizio 10
+
+Guardare README.md
+
+
+# Esercizio 11
+
+## Sequenza dei comandi
+
+```bash
+
+mkdir temporanei
+touch temporanei/nota.txt temporanei/dati.tmp
+
+git add temporanei
+git commit -m "feat: aggiunge cartella temporanei per errore"
+
+echo "temporanei/" >> .gitignore
+
+git rm -r --cached temporanei
+
+git add .gitignore
+git commit -m "fix: rimuove temporanei dal tracciamento Git"
+
+git ls-files temporanei
+git check-ignore -v temporanei/nota.txt
