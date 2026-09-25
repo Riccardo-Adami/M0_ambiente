@@ -168,3 +168,37 @@ git commit -m "fix: rimuove temporanei dal tracciamento Git"
 
 git ls-files temporanei
 git check-ignore -v temporanei/nota.txt
+
+
+# Esercizio 12
+Comandi
+```bash
+git add versioni.md
+git commit -m "Aggiorna la scheda delle versioni della postazione"
+git push```
+
+Errore (output) esercizio 12:
+```bash
+[main 7a60b3e] Aggiorna la scheda delle versioni della postazione
+ 1 file changed, 1 insertion(+)
+ create mode 100644 M0_ambiente_informatica/versioni.md
+To https://github.com/Riccardo-Adami/M0_ambiente
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Riccardo-Adami/M0_ambiente'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+@Riccardo-Adami ➜ /workspaces/M0_ambiente/M0_ambiente_informatica (main) $ 
+```
+
+Per risolvere il blocco ho pulito l'area di lavoro efatto il rebase:
+```bash
+git stash
+git rebase origin/main
+git push origin main
+
+# Ripristina i file messi temporaneamente da parte
+git stash pop
+git log --oneline --graph --decorate
+```

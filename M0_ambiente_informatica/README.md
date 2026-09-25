@@ -9,7 +9,7 @@
 
 ## Scopo del Repository
 Questo repository raccoglie le esercitazioni e i progetti di Laboratorio di Informatica. 
-
+ 
 
 ```text
 .
@@ -17,3 +17,5 @@ Questo repository raccoglie le esercitazioni e i progetti di Laboratorio di Info
 ├── README.md
 └── M0_ambiente/
     ├── comandi.md
+
+modifica esercizio2
